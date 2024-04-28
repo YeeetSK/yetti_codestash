@@ -1,0 +1,7 @@
+{
+    "dialog_title": "Stash",
+    "dialog_description": "Enter the code",
+
+    "notify_title": "Stash Code",
+    "notify_description": "You entered an invalid code"
+}

@@ -40,24 +40,24 @@ for k, v in ipairs(Config.StashLocs) do
             }
         })
     elseif Config.Target == 'qb' then
-    exports['qb-target']:AddBoxZone(v.id, vector3(v.coords.x, v.coords.y, v.coords.z - 1), 1.5, 1.6, {
-        name = v.id,
-        heading = 0,
-        debugPoly = Config.Debug,
-        minZ = v.coords.z - 1.5,
-        maxZ = v.coords.z + 1.5,
-    }, {
-        options = {
-        {
-            icon = Config.TargetIcon,
-            label = Config.TargetLabel,
-            action = function ()
-                TriggerEvent('yetticodeStash:openStash' .. v.id)
-            end
-        }
-        },
-        distance = Config.TargetDistance,
-    })
+        exports['qb-target']:AddBoxZone(v.id, vector3(v.coords.x, v.coords.y, v.coords.z - 1), 1.5, 1.6, {
+            name = v.id,
+            heading = 0,
+            debugPoly = Config.Debug,
+            minZ = v.coords.z - 1.5,
+            maxZ = v.coords.z + 1.5,
+        }, {
+            options = {
+            {
+                icon = Config.TargetIcon,
+                label = Config.TargetLabel,
+                action = function ()
+                    TriggerEvent('yetticodeStash:openStash' .. v.id)
+                end
+            }
+            },
+            distance = Config.TargetDistance,
+        })
     end
 
 

@@ -3,5 +3,7 @@
     "dialog_description": "Enter the code",
 
     "notify_title": "Stash Code",
-    "notify_description": "You entered an invalid code"
+    "notify_description": "You entered an invalid code",
+
+    "open_stash_textui": "[E] Open Stash"
 }
